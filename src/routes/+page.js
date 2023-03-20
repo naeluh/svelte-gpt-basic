@@ -1,5 +1,5 @@
 export async function load({ fetch }) {
-	const url = `/.netlify/functions/cats`;
+	const url = `/api/cats`;
 	const res = await fetch(url);
 	if (res.ok) {
 		const data = await res.json();

@@ -1,7 +1,7 @@
 const API_ENDPOINT = 'https://cat-fact.herokuapp.com/facts';
-import fetch from 'node-fetch';
+const fetch = require('node-fetch');
 
-const handler = async (event, context) => {
+exports.handler = async (event, context) => {
 	try {
 		const response = await fetch(API_ENDPOINT);
 		const data = await response.json();
@@ -14,5 +14,3 @@ const handler = async (event, context) => {
 		};
 	}
 };
-
-export { handler };
