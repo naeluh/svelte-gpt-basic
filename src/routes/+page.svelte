@@ -37,5 +37,5 @@
 	<br />
 	loading: {loading}
 	<br />
-	<pre><code>{JSON.stringify(data, null, 2)}</code></pre>
+	<pre><code>{data}</code></pre>
 </ul>
