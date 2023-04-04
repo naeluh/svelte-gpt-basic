@@ -1,8 +1,11 @@
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
 
 [functions]
-  directory = "netlify/functions"
+  directory = "functions/"
   node_bundler = "esbuild"
+
+[build]
+  command = "npm run build"
+  publish = "build/"
+
+[dev]
+  command = "vite dev"

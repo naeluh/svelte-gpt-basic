@@ -21,6 +21,7 @@
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"netlify-cli": "^13.1.6",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
 		"svelte": "^3.54.0",
@@ -31,7 +32,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"node-fetch": "^3.3.1"
+		"@netlify/functions": "^1.4.0",
+		"node-fetch": "^3.3.1",
+		"openai": "^3.2.1"
 	},
 	"prepare": "svelte-kit sync"
 }
