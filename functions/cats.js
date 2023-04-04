@@ -6,7 +6,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 const handler = async (event) => {
-	const prompt = 'Generate SIMPLE mock data in JSON format';
+	const prompt = `Generate 5 objects of mock data in JSON format`;
 	try {
 		const completion = await openai.createChatCompletion({
 			model: 'gpt-3.5-turbo',

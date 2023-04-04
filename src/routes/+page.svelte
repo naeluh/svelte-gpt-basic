@@ -15,7 +15,7 @@
 			console.log(data);
 			loading = false;
 		} catch (error) {
-			data = null;
+			data = error;
 			loading = false;
 		}
 	};
@@ -34,5 +34,8 @@
 		{/each}
 	{/if} -->
 	<button on:click={submit}>LOAD RESPONSE</button>
-	{loading}
+	<br />
+	loading: {loading}
+	<br />
+	<pre><code>{JSON.stringify(data, null, 2)}</code></pre>
 </ul>
